@@ -1,4 +1,5 @@
 import os
+import sys
 import shutil
 
 from textnode import TextNode
@@ -35,7 +36,7 @@ def extract_title(markdown):
     raise Exception("Markdown doesn't have a title")
 
 
-def generate_page_recursive(from_path, template_path, dest_path):
+def generate_page_recursive(from_path, template_path, dest_path, basepath):
     abs_from = os.path.abspath(from_path)
     abs_template = os.path.abspath(template_path)
     abs_dest = os.path.abspath(dest_path)
@@ -48,7 +49,7 @@ def generate_page_recursive(from_path, template_path, dest_path):
 
         if os.path.isdir(abs_read):
             os.mkdir(abs_write)
-            generate_page_recursive(abs_read, abs_template, abs_write)
+            generate_page_recursive(abs_read, abs_template, abs_write, basepath)
             continue
 
         with open(abs_read, mode="r") as f:
@@ -66,16 +67,25 @@ def generate_page_recursive(from_path, template_path, dest_path):
         template_content = template_content.replace("{{ Title }}", title)
         template_content = template_content.replace("{{ Content }}", html)
 
+        print("Base path is: ", basepath)
+        template_content = template_content.replace('href="/', f'href="{basepath}')
+        template_content = template_content.replace('src="/', f'src="{basepath}')
+
         abs_write = abs_write.replace(".md", ".html")
         with open(abs_write, mode="w") as f:
             f.write(template_content)
             f.close()
 
 
-def main():
-    copy_files("static", "public")
-    generate_page_recursive("content", "template.html", "public")
+def main(basepath):
+    copy_files("static", "docs")
+    generate_page_recursive("content", "template.html", "docs", basepath)
 
 
 if __name__ == "__main__":
-    main()
+    basepath = "/"
+    if len(sys.argv) == 2:
+        basepath = sys.argv[1]
+    else:
+        print("Basepath not provided or is invalide falling back to '/'")
+    main(basepath)
