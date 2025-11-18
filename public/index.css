@@ -1,7 +1,7 @@
 body {
-  background-color: #1f1c25;
-  color: #f0e6d1;
-  font-family: "Luminari", "Georgia", serif;
+  background-color: #0d1117;
+  color: #f0f6fc;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, serif;
   line-height: 1.7;
   margin: 0;
   padding: 20px;
@@ -20,7 +20,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #dda15e;
+  color: #58a6ff;
   margin-top: 24px;
   margin-bottom: 16px;
   text-shadow: 2px 2px 4px #000;
@@ -45,7 +45,7 @@ h6 {
 }
 
 a {
-  color: #e0a96d;
+  color: #58a6ff;
   text-decoration: none;
   border-bottom: 2px solid #e0a96d;
 }
@@ -89,7 +89,7 @@ blockquote {
   padding-bottom: 0.5em;
   padding-right: 0.5em;
   color: #ddd;
-  font-style: italic;
+  #font-style: italic;
 }
 
 img {

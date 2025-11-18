@@ -1,8 +1,6 @@
 # Programming Courses Catalog
 
-![Who will win the battle of bits](/images/Title.png)
-
-Curated resources for your needs
+A starter catalog of programming courses to help you learn by building real projects.
 
 ## Courses
 

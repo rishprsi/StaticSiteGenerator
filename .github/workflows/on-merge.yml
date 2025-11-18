@@ -1,0 +1,22 @@
+name: Run script on merge
+
+on:
+  push:
+    branches:
+      - resrouce_bonanza # Replace with your target branch (e.g., develop)
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Execute script
+        run: |
+          # Your script commands go here
+          echo "Code merged to main branch. Running script..."
+          sh build.sh
+          # Example: node your_script.js
+          # Example: python your_script.py
+          # Example: ./path/to/your_script.sh

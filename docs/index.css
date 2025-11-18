@@ -1,7 +1,42 @@
+/* Modern baseline tokens (light/dark) */
+:root {
+  --bg: #f7f8fb;
+  --surface: #ffffff;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --border: #e5e7eb;
+
+  --primary: #2563eb;
+  --primary-600: #2563eb;
+  --primary-700: #1d4ed8;
+
+  --radius: 12px;
+  --shadow-sm: 0 2px 6px rgba(0,0,0,.05);
+  --shadow: 0 8px 24px rgba(0,0,0,.05);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0b1020;
+    --surface: #14172a;
+    --text: #e5e7eb;
+    --muted: #94a3b8;
+    --border: #1f2a4a;
+
+    --primary: #93c5fd;
+    --primary-600: #60a5fa;
+    --primary-700: #3b82f6;
+
+    --shadow-sm: 0 2px 6px rgba(0,0,0,.4);
+    --shadow: 0 8px 28px rgba(0,0,0,.6);
+  }
+}
+
+/* Existing styles preserved; modern CSS tokens will override where applicable below */
+
 body {
-  background-color: #1f1c25;
-  color: #f0e6d1;
-  font-family: "Luminari", "Georgia", serif;
+  background-color: #0d1117;
+  color: #f0f6fc;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, serif;
   line-height: 1.7;
   margin: 0;
   padding: 20px;
@@ -20,7 +55,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #dda15e;
+  color: #58a6ff;
   margin-top: 24px;
   margin-bottom: 16px;
   text-shadow: 2px 2px 4px #000;
@@ -45,14 +80,14 @@ h6 {
 }
 
 a {
-  color: #e0a96d;
+  color: #58a6ff;
   text-decoration: none;
-  border-bottom: 2px solid #e0a96d;
+  border-bottom: 2px solid #58a6ff;
 }
 
 a:hover {
-  color: #f4a261;
-  border-color: #f4a261;
+  color: #79c0ff;
+  border-color: #79c0ff;
 }
 
 ul,
@@ -89,7 +124,7 @@ blockquote {
   padding-bottom: 0.5em;
   padding-right: 0.5em;
   color: #ddd;
-  font-style: italic;
+  #font-style: italic;
 }
 
 img {
@@ -128,3 +163,4 @@ img {
 ::-webkit-scrollbar-corner {
   background: #1f1c25;
 }
+

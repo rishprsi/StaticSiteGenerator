@@ -2,8 +2,8 @@
 
 [< Back Home](/)
 
-Give me a call anytime to chat about Tolkien!
+Shoot me a text/email anytime to chat about Programming!
 
-`555-555-5555`
+[rishprsi@uw.edu](mailto:rishprsi@uw.edu)
 
-**"Váya márië."**
+[Github](https://github.com/rishprsi/)
