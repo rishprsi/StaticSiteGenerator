@@ -27,11 +27,38 @@
 
 ## My favourite open source projects
 
-### Neovim [Link](https://github.com/neovim/neovim)
+### [Neovim](https://github.com/neovim/neovim)
 
-### tmux [Link](https://github.com/tmux/tmux)
+- Successor of Vim, don't worry you can exit this editor :)
+- Very customizable, don't worry I'll show you
+- Remap anything you want
+- Add or create plugins for features you want
+- Add or create a theme that you would like
+- Power of Vim Motionsss.
 
-### Zen [Link](https://github.com/zen-browser)
+### [tmux](https://github.com/tmux/tmux)
+
+- Creates a session on the terminal
+- If your ssh shell dies because of any reason tmux will still store your session in the background
+- Any long running assignments? Just run it on tmux
+- As much customization as you want
+
+### [Zen](https://github.com/zen-browser)
+
+- It won't spy on you
+- Looks sleek as heck
+- Gives you all the power
+- Will block ads and trackers for you
+- All firefox based extensions and settings are supported
+
+### [Opencode](https://github.com/sst/opencode)
+
+- Opensource alternative for a coding agent.
+- Only charges for AI model use, can use free models
+- Can do real time sharing of your sessions
+- Has a plan and a build mode
+- Chose any local or online model you would like
+- Provides a pay as you go plan
 
 ### Lots more at [Awesome useful projects](https://github.com/Furthir/awesome-useful-projects?tab=readme-ov-file)
 
@@ -39,9 +66,9 @@
 
 - Linux kernel
 - Most languages( C, C++, Rust, Golang, Java, JavaScript)
+- Git
 - Redis
 - Tensorflow
 - Apache
 - Most frameworks (Django, Node, React)
 - Vim, Emacs (Grand dads of modern IDEs)
-
