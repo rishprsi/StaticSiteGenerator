@@ -5,7 +5,7 @@
 Use the resources that you have fun using and most relate with
 Take at your own pace
 
-## [Boot.dev](www.boot.dev)
+## [Boot.dev](https://www.boot.dev)
 
 ![Boots](/images/boots.webp)
 
