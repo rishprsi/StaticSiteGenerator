@@ -7,7 +7,7 @@
 > It made the incredible advances that we have had possible.
 > Linus Torvalds
 
-## My approaach to open source
+## My approach to open source
 
 - Find open source alternates to the software that you use everyday
 - Find a mature and a nascent project that you like
